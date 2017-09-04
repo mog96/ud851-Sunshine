@@ -65,8 +65,14 @@ public class MainActivity extends AppCompatActivity {
          * the "\n\n\n" after the String is to give visual separation between each String in the
          * TextView. Later, we'll learn about a better way to display lists of data.
          */
+        /*
         for (String dummyWeatherDay : dummyWeatherData) {
-            mWeatherTextView.append(dummyWeatherDay + "\n\n\n");
+            mWeatherTextView.append(dummyWeatherDay);
+        }
+        */
+
+        for (int i = 0; i < dummyWeatherData.length; i++) {
+            mWeatherTextView.append(dummyWeatherData[i]);
         }
     }
 }
