@@ -182,6 +182,7 @@ public final class NetworkUtils {
                 response = scanner.next();
             }
             scanner.close();
+            Log.v(TAG, "Weather response: " + response);
             return response;
         } finally {
             urlConnection.disconnect();
